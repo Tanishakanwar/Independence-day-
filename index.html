@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+
+<html lang="hi">
+
+<head>
+
+ <meta charset="UTF-8">
+
+ <title>Independence Day Storytelling</title>
+
+ <style>
+
+  body {
+
+    font-family: Arial, sans-serif;
+
+    text-align: center;
+
+    background: linear-gradient(orange, white, green);
+
+    margin: 0;
+
+    padding: 0;
+
+  }
+
+  header {
+
+    background: rgba(0,0,0,0.3);
+
+    color: white;
+
+    padding: 20px;
+
+    font-size: 24px;
+
+    font-weight: bold;
+
+  }
+
+  .button, .btn {
+
+    display: inline-block;
+
+    margin: 10px;
+
+    padding: 12px 20px;
+
+    font-size: 18px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    background-color: #222;
+
+    color: white;
+
+    transition: 0.3s;
+
+  }
+
+  .button:hover, .btn:hover {
+
+    background-color: #444;
+
+  }
+
+  #content {
+
+    margin-top: 30px;
+
+    padding: 20px;
+
+    background: rgba(255,255,255,0.7);
+
+    border-radius: 10px;
+
+    display: inline-block;
+
+    max-width: 600px;
+
+    font-size: 18px;
+
+    line-height: 1.6;
+
+  }
+
+ </style>
+
+</head>
+
+<body>
+
+<header>🇮🇳 स्वतंत्रता दिवस 2025 🇮🇳<br>Storytelling Through Coding</header>
+
+ 
+
+<div>
+
+  <button class="button" onclick="startStory()">कहानी शुरू करें</button>
+
+  <button class="btn" onclick="aboutDay()">स्वतंत्रता दिवस के बारे में</button>
+
+  <button class="btn" onclick="startQuiz()">ज्ञान परीक्षा</button>
+
+</div>
+
+<div id="content">"Welcome to the story of India's Independence"</div>
+
+<script>
+
+  let storyIndex = 0;
+
+  const story = [
+
+    "1857 में भारत के पहले स्वतंत्रता संग्राम की शुरुआत हुई, जिसमें वीरों ने अपनी जान की कुर्बानी दी।",
+
+    "महात्मा गांधी के नेतृत्व में 'अहिंसा' और 'सत्याग्रह' के मार्ग पर देश ने आजादी की राह चुनी।",
+
+    "15 अगस्त 1947 को भारत ने स्वतंत्रता प्राप्त की, और पंडित नेहरू ने लाल किले से पहला भाषण दिया।",
+
+    "आज का भारत — प्रगति, एकता और विविधता का प्रतीक है।"
+
+  ];
+
+  function startStory() {
+
+    document.getElementById('content').innerText = story[storyIndex];
+
+    storyIndex++;
+
+    if (storyIndex >= story.length) storyIndex = 0;
+
+  }
+
+  function aboutDay() {
+
+    document.getElementById('content').innerText =
+
+      "15 अगस्त 1947 से पहले हमारा देश अंग्रेजों का गुलाम था। 15 अगस्त 1947 को भारत अंग्रेजों की गुलामी से आज़ाद हुआ। इस दिन को पूरे देश में तिरंगा फहराकर और देशभक्ति के गीत गाकर मनाया जाता है।";
+
+  }
+
+  function startQuiz() { 
+
+    document.getElementById('content').innerText = "Quiz Coming soon! 🇮🇳";
+
+  }
+
+</script>
+
+</body>
+
+</html>
